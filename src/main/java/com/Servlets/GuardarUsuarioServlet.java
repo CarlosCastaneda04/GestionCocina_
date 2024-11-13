@@ -52,7 +52,7 @@ public class GuardarUsuarioServlet extends HttpServlet {
             usuario.setFoto(foto);
 
             UsuarioDAO usuarioDAO = new UsuarioDAO();
-            usuarioDAO.insertarUsuario(usuario);
+            //usuarioDAO.insertarUsuario(usuario);
 
             response.sendRedirect("Usuarios/success.jsp");  // Redirige a una página de éxito
         } catch (Exception e) {
