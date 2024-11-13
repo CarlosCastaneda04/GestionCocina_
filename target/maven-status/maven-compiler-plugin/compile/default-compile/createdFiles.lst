@@ -1,7 +1,8 @@
 com\models\Usuario.class
-com\Servlets\RegistroUsuarioServlet.class
+com\Servlets\LogoutServlet.class
 utils\DBConnection.class
 com\mycompany\gestioncocina\JakartaRestConfiguration.class
+com\Servlets\GuardarUsuarioServlet.class
 com\mycompany\gestioncocina\resources\JakartaEE10Resource.class
 com\Servlets\LoginServlet.class
 com\utils\UsuarioDAO.class

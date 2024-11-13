@@ -6,6 +6,7 @@ import java.util.Date;
 @Entity
 @Table(name = "Usuarios")
 public class Usuario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_usuario;
@@ -16,16 +17,29 @@ public class Usuario {
 
     @Temporal(TemporalType.DATE)
     private Date fecha_registro;
-    
+
     private String clave;
+    private byte[] foto;  // Opcional: foto en formato binario
+    private String estado;
+    private Boolean accesoSistema;
 
-    @Lob
-    private byte[] foto; // Utilizamos byte[] para almacenar la imagen en formato binario
+    // Constructor vacío (necesario para JPA)
+    public Usuario() {
+    }
 
-    private int estado; // 1: activo, 2: incapacitado, 3: despedido, 4: renuncio
-    private boolean acceso_sistema; // true: acceso permitido, false: sin acceso
+    // Constructor completo
+    public Usuario(String nombre, String apellido, String email, Date fecha_registro, String clave, String estado, Boolean accesoSistema) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.fecha_registro = fecha_registro;
+        this.clave = clave;
+        this.estado = estado;
+        this.accesoSistema = accesoSistema;
+    }
 
     // Getters y Setters
+
     public int getId_usuario() {
         return id_usuario;
     }
@@ -82,19 +96,20 @@ public class Usuario {
         this.foto = foto;
     }
 
-    public int getEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 
-    public boolean isAcceso_sistema() {
-        return acceso_sistema;
+    public Boolean getAccesoSistema() {
+        return accesoSistema;
     }
 
-    public void setAcceso_sistema(boolean acceso_sistema) {
-        this.acceso_sistema = acceso_sistema;
+    public void setAccesoSistema(Boolean accesoSistema) {
+        this.accesoSistema = accesoSistema;
     }
 }
+
