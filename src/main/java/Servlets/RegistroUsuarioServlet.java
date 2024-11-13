@@ -1,7 +1,5 @@
 package servlets;
 
-import models.Usuario;
-import utils.DBConnection;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -16,6 +14,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 import java.sql.Timestamp;
 import java.util.Date;
+import models.Usuario;
+import utils.DBConnection;
 
 @WebServlet("/RegistroUsuarioServlet")
 @MultipartConfig(maxFileSize = 16177215) // Tamaño máximo del archivo (aproximadamente 16MB)
@@ -25,7 +25,7 @@ public class RegistroUsuarioServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // Redirigir al formulario de registro
-        request.getRequestDispatcher("registroUsuario.jsp").forward(request, response);
+        request.getRequestDispatcher("Usuarios/registroUsuario.jsp").forward(request, response);
     }
 
     @Override
