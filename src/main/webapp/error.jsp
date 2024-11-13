@@ -1,13 +1,13 @@
-<!-- error.jsp -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Error</title>
 </head>
 <body>
-    <h2>Hubo un error al procesar tu solicitud.</h2>
-    <p><%= request.getParameter("error") %></p>
-    <a href="registroUsuario.jsp">Volver al registro de usuario</a>
+    <h1>Ocurrió un Error</h1>
+    <p>${param.error != null ? param.error : "Ocurrió un error inesperado."}</p>
+    <a href="UsuarioServlet?action=list">Regresar a la lista de usuarios</a>
 </body>
 </html>
+
 

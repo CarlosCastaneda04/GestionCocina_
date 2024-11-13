@@ -1,8 +1,11 @@
-C:\Multiplataforma\GestionCocina\src\main\java\utils\DBConnection.java
-C:\Multiplataforma\GestionCocina\src\main\java\com\Servlets\GuardarUsuarioServlet.java
-C:\Multiplataforma\GestionCocina\src\main\java\com\Servlets\LoginServlet.java
-C:\Multiplataforma\GestionCocina\src\main\java\com\models\Usuario.java
-C:\Multiplataforma\GestionCocina\src\main\java\com\utils\UsuarioDAO.java
+C:\Multiplataforma\GestionCocina\src\main\java\modelo\Usuario.java
+C:\Multiplataforma\GestionCocina\src\main\java\controlador\RecetaServlet.java
+C:\Multiplataforma\GestionCocina\src\main\java\modelo\Favorito.java
+C:\Multiplataforma\GestionCocina\src\main\java\modelo\Receta.java
+C:\Multiplataforma\GestionCocina\src\main\java\controlador\FavoritoServlet.java
 C:\Multiplataforma\GestionCocina\src\main\java\com\mycompany\gestioncocina\resources\JakartaEE10Resource.java
-C:\Multiplataforma\GestionCocina\src\main\java\com\Servlets\LogoutServlet.java
+C:\Multiplataforma\GestionCocina\src\main\java\servicios\FavoritoService.java
+C:\Multiplataforma\GestionCocina\src\main\java\servicios\RecetaService.java
+C:\Multiplataforma\GestionCocina\src\main\java\controlador\UsuarioServlet.java
+C:\Multiplataforma\GestionCocina\src\main\java\servicios\UsuarioService.java
 C:\Multiplataforma\GestionCocina\src\main\java\com\mycompany\gestioncocina\JakartaRestConfiguration.java
