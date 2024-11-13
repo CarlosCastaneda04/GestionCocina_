@@ -4,15 +4,12 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="GestionCocinaPU" transaction-type="RESOURCE_LOCAL">
-        <!-- Configuración del proveedor JPA (Hibernate) -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         
-        <!-- Configuración de la conexión a la base de datos -->
         <properties>
-            <!-- URL de conexión a SQL Server -->
             <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=SistemaCocina"/>
-            <property name="jakarta.persistence.jdbc.user" value="sa"/> <!-- Cambia 'sa' a tu usuario -->
-            <property name="jakarta.persistence.jdbc.password" value="1704"/> <!-- Cambia '1704' a tu contraseña -->
+            <property name="jakarta.persistence.jdbc.user" value="sa"/>
+            <property name="jakarta.persistence.jdbc.password" value="1704"/>
             <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
             
             <!-- Configuración de Hibernate -->

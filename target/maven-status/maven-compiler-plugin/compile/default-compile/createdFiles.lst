@@ -1,5 +1,7 @@
+com\models\Usuario.class
+com\Servlets\RegistroUsuarioServlet.class
 utils\DBConnection.class
-models\Usuario.class
 com\mycompany\gestioncocina\JakartaRestConfiguration.class
-servlets\RegistroUsuarioServlet.class
 com\mycompany\gestioncocina\resources\JakartaEE10Resource.class
+com\Servlets\LoginServlet.class
+com\utils\UsuarioDAO.class
