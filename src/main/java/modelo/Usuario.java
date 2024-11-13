@@ -138,21 +138,4 @@ public class Usuario implements Serializable {
             return codigo;
         }
     }
-    // Enumeración para el estado
-    public enum EstadoUsuario {
-        ACTIVO("1"),
-        INCAPACITADO("2"),
-        DESPEDIDO("3"),
-        RENUNCIO("4");
-
-        private final String codigo;
-
-        EstadoUsuario(String codigo) {
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return codigo;
-        }
-    }
 }

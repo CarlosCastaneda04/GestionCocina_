@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+=======
+servicios\FavoritoService.class
+servicios\UsuarioService.class
+servicios\RecetaService.class
+com\mycompany\gestioncocina\JakartaRestConfiguration.class
+controlador\FavoritoServlet.class
+controlador\UsuarioServlet.class
+modelo\Favorito.class
+modelo\Receta.class
+controlador\RecetaServlet.class
+modelo\Usuario$EstadoUsuario.class
+modelo\Usuario.class
+com\mycompany\gestioncocina\resources\JakartaEE10Resource.class
+>>>>>>> carlos
