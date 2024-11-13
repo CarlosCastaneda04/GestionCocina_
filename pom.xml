@@ -6,29 +6,64 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>GestionCocina-1.0-SNAPSHOT</name>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jakartaee>10.0.0</jakartaee>
+        <jakartaee.version>10.0.0</jakartaee.version>
     </properties>
-    
+
     <dependencies>
+        <!-- Jakarta EE API -->
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>${jakartaee}</version>
+            <version>${jakartaee.version}</version>
             <scope>provided</scope>
         </dependency>
-           <dependency>
-    <groupId>com.microsoft.sqlserver</groupId>
-    <artifactId>mssql-jdbc</artifactId>
-    <version>12.8.0.jre8</version> <!-- Esta versión debería ser similar a la que tienes -->
+
+        <!-- JPA API (para usar JPA con Jakarta) -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <!-- Hibernate como implementación de JPA -->
+        <dependency>
+    <groupId>org.hibernate.orm</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.1.6.Final</version>
 </dependency>
+
+
+        <!-- Driver JDBC para SQL Server -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.8.1.jre8</version>
+        </dependency>
+
+        <!-- JSP API para soporte de páginas JSP -->
+        <dependency>
+            <groupId>jakarta.servlet.jsp</groupId>
+            <artifactId>jakarta.servlet.jsp-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JSTL para JSP -->
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>2.0.0</version>
+        </dependency>
     </dependencies>
 
-
-
-    
     <build>
         <plugins>
             <plugin>
@@ -43,7 +78,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
+                <version>3.2.3</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
             </plugin>
         </plugins>
     </build>
