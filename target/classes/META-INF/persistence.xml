@@ -4,7 +4,7 @@
     version="2.1">
 
     <persistence-unit name="GestionCocinaPU" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.models.Usuario</class>
         
         <properties>
